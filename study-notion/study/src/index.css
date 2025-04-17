@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+
+/* Base styles for dark mode */
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #111115, #0d0e13);
+  color: white;
+}
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Main Container */
+  /* .container {
+    padding: 2rem;
+  } */
+  
+  /* Header Section */
+  /* .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  } */
+  
+  /* .header img {
+    width: 100%;
+  } */
+/*   
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+   */
+  /* .header p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #a8a29e;
+  } */
+  
+  /* Media Queries */
+  /* @media (max-width: 768px) {
+ 
+    .header h1 {
+      font-size: 2rem;
+    }
+    .header p {
+      font-size: 0.9rem;
+    } */
+  
+    /* Stacking layout for smaller screens */
+    /* .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .main-content img {
+      width: 80%;
+    } */
+  
+    /* Button Styling */
+    /* .cta-buttons button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  } */
+  
+  /* @media (max-width: 480px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .header p {
+      font-size: 0.85rem;
+    }
+  
+    .cta-buttons button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    } */
+  
+    /* Image resizing for small screens */
+    /* .main-content img {
+      width: 90%;
+    }
+  
+    .main-content {
+      padding: 0 1rem;
+    }
+  } */
+  
+  /* Large Screens */
+  /* @media (min-width: 1024px) {
+   
+    .header h1 {
+      font-size: 3rem;
+    }
+  
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .main-content img {
+      width: 45%;
+    }
+  
+    .cta-buttons button {
+      padding: 15px 30px;
+      font-size: 1.25rem;
+    }
+  }
+   */
+
+
+   /* @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-down {
+    animation: fade-in-down 0.5s ease-out forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  } */
+
+  @keyframes textShimmer {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
+  .animate-textShimmer {
+    background-size: 400% 100%;
+    animation: textShimmer 3s ease-in-out infinite;
+  }
+  
+  @keyframes floatingLogo {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-floatingLogo {
+    animation: floatingLogo 3s ease-in-out infinite;
+  }
+  

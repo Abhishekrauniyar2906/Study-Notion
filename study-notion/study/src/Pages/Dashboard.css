@@ -1,0 +1,11 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    min-height: calc(100vh - 0px); /* Adjust for potential header/footer */
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  }

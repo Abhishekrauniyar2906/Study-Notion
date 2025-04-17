@@ -1,0 +1,315 @@
+/* Larger screens (desktops - default styles from the component) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 12px 32px;
+    /* background: linear-gradient(to right, #111115, #0d0e13); */
+    color: white;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 32px;
+    width: 160px;
+    margin-right: 16px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;
+    color: #a3a3a3;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-nav li a.active {
+    color: #facc15; /* Yellow-400 */
+    font-weight: 600;
+  }
+  
+  .navbar-nav li a:hover {
+    color: #facc15; /* Yellow-400 */
+  }
+  
+  /* Courses Dropdown Styles (Desktop) */
+  .navbar-nav li.relative > button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: #a3a3a3;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    padding: 0;
+  }
+  
+  .navbar-nav li.relative > button:hover {
+    color: #facc15;
+  }
+  
+  .navbar-nav li.relative .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a202c;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 8px 0;
+    display: none;
+    min-width: 200px; /* Adjust as needed */
+    z-index: 20;
+  }
+  
+  .navbar-nav li.relative .dropdown.open {
+    display: block;
+  }
+  
+  .navbar-nav li.relative .dropdown li a {
+    padding: 8px 16px;
+    display: block;
+    color: #a3a3a3;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  
+  .navbar-nav li.relative .dropdown li a.active,
+  .navbar-nav li.relative .dropdown li a:hover {
+    background-color: #2d3748;
+    color: white;
+  }
+  
+  .navbar-auth {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .navbar-auth button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .navbar-auth button:focus {
+    outline: none;
+  }
+  
+  .navbar-auth a:first-child button {
+    background-color: #facc15; /* Yellow-500 */
+  }
+  
+  .navbar-auth a:first-child button:hover {
+    background-color: #eab308; /* Yellow-600 */
+  }
+  
+  .navbar-auth a:last-child button {
+    background-color: #3b82f6; /* Blue-500 */
+  }
+  
+  .navbar-auth a:last-child button:hover {
+    background-color: #2563eb; /* Blue-600 */
+  }
+  
+  .navbar-auth a:first-child + a button { /* Style for signup button when logged out */
+    background-color: #3b82f6; /* Blue-500 */
+  }
+  
+  .navbar-auth a:first-child + a button:hover { /* Style for signup button when logged out */
+    background-color: #2563eb; /* Blue-600 */
+  }
+  
+  .navbar-auth a button:first-child { /* Style for logout button when logged in */
+    background-color: #ef4444; /* Red-500 */
+  }
+  
+  .navbar-auth a button:first-child:hover { /* Style for logout button when logged in */
+    background-color: #dc2626; /* Red-600 */
+  }
+  
+  .navbar-auth a button:last-child { /* Style for dashboard button when logged in */
+    background-color: #16a34a; /* Green-500 */
+  }
+  
+  .navbar-auth a button:last-child:hover { /* Style for dashboard button when logged in */
+    background-color: #15803d; /* Green-600 */
+  }
+  
+  .navbar-bottom-border {
+    border-bottom: 1px solid #4a5568; /* Zinc-700 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Medium screens (tablets - Adjustments) */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 12px 20px;
+    }
+  
+    .navbar-logo img {
+      height: 28px;
+      width: 140px;
+      margin-right: 12px;
+    }
+  
+    .navbar-nav {
+      gap: 16px;
+    }
+  
+    .navbar-nav li a,
+    .navbar-nav li.relative > button {
+      font-size: 0.9rem;
+    }
+  
+    .navbar-auth {
+      gap: 8px;
+    }
+  
+    .navbar-auth button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  
+    /* Hide desktop dropdown on tablet */
+    .navbar-nav li.relative .dropdown {
+      display: none !important;
+    }
+  }
+  
+  /* Small screens (mobiles - Improved Hamburger menu) */
+  @media (max-width: 640px) {
+    .navbar {
+      padding: 10px 16px;
+    }
+  
+    .navbar-logo img {
+      height: 24px;
+      width: 120px;
+      margin-right: 8px;
+    }
+  
+    .navbar-nav {
+      display: none; /* Hide default navigation links on mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on your navbar height */
+      left: 0;
+      background-color: #1a202c; /* Darker background for the menu */
+      width: 100%;
+      text-align: left; /* Align items to the left in mobile menu */
+      padding: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+  
+    .navbar-nav.open {
+      display: flex; /* Show navigation links when the menu is open */
+    }
+  
+    .navbar-nav li {
+      padding: 8px 16px;
+    }
+  
+    .navbar-nav li a,
+    .navbar-nav li.relative > button {
+      color: white;
+      font-size: 1rem;
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+  
+    /* Mobile Courses Dropdown */
+    .navbar-nav li.relative > button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-right: 16px; /* To accommodate the arrow */
+    }
+  
+    .navbar-nav li.relative .dropdown {
+      position: static; /* Flow with the document on mobile */
+      background-color: #2d3748;
+      box-shadow: none;
+      padding: 0;
+      border-radius: 0;
+      display: none !important; /* Initially hidden on mobile */
+      margin-top: 4px;
+    }
+  
+    .navbar-nav li.relative .dropdown.open {
+      display: block !important;
+    }
+  
+    .navbar-nav li.relative .dropdown li a {
+      padding-left: 32px; /* Indent dropdown items */
+    }
+  
+    .navbar-auth {
+      gap: 8px;
+      order: 1; /* Move auth buttons to the right in flex container */
+    }
+  
+    .navbar-auth button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    /* Hamburger menu icon */
+    .hamburger-container {
+      display: block;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: white;
+      order: 2; /* Move hamburger icon to the right */
+    }
+  
+    /* Hide default nav on mobile, show hamburger */
+    .navbar nav {
+      display: none;
+    }
+  
+    /* Adjust logo order */
+    .navbar-logo {
+      order: 0;
+    }
+  
+    /* Create space for the hamburger icon */
+    .navbar {
+      position: relative; /* To position the absolute mobile nav */
+      display: flex;
+      align-items: center;
+    }
+  
+    /* Hide the hamburger by default on larger screens */
+    @media (min-width: 641px) {
+      .hamburger-container {
+        display: none;
+      }
+      .navbar nav {
+        display: block; /* Show desktop nav */
+      }
+    }
+  }
+
+
+  

@@ -1,0 +1,72 @@
+/* 
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(100%); 
+  }
+  50% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+.animate-move-left-right {
+  animation: moveLeftToRight 15s linear infinite;
+}
+
+.review-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-cards-wrapper {
+  display: flex;
+  animation: moveLeftToRight 20s linear infinite;
+}
+
+.review-card {
+  flex-shrink: 0;
+  width: 100%; 
+  margin-right: 25px; 
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:#ffffff;
+}
+
+@media (min-width: 768px) {
+  .review-card {
+    width: 25%; 
+  }
+}
+
+@media (max-width: 767px) {
+  .review-container {
+    height: auto; 
+  }
+} */
+
+
+/* .review-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+.review-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.review-scroll::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 8px;
+}
+.review-scroll::-webkit-scrollbar-track {
+  background: transparent;
+} */
+
+
+/* Media Query Changes */

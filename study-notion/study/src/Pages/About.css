@@ -1,0 +1,28 @@
+/* About.css */
+
+.about-container {
+    width: 100%; /* Make the About container full width */
+    overflow: hidden; /* Prevent potential horizontal scrollbar */
+  }
+  
+  .section-title {
+    /* Example styles - adjust to match your Home component */
+    font-family: sans-serif;
+    color: #e4e4e7; /* Example text color */
+  }
+  
+  .section-paragraph {
+    /* Example styles */
+    line-height: 1.6;
+  }
+  
+  .image-gallery {
+    /* Adjust gap and layout for responsiveness */
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .image-wrapper {
+    flex: 0 1 calc(33% - 1rem); /* Roughly 3 images per row on larger screens */
+    max-width: 30;
+  }
