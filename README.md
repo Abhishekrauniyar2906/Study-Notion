@@ -2,7 +2,7 @@
 
 **StudyNotion** is a beautifully designed, responsive **EdTech platform** that simulates core features of modern **Learning Management Systems (LMS)** with personalized dashboards for **Students** and **Instructors**. Built using **React.js** and **Tailwind CSS**, this project emphasizes **role-based user experiences**, **smooth animations**, and a **modular, scalable component structure**.
 
-🔗 **[Live Demo](#)**
+🔗 **[Live Demo](#):- https://abhishekrauniyar2906-study-notion.vercel.app/**
 
 ---
 
